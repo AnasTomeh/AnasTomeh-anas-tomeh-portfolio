@@ -17,7 +17,7 @@ const Timeline = (props: ExperiencesProps) => {
     return (
 
         <div role="group">
-            <div className="flex flex-col grid-cols-9 p-4 mx-auto md:grid">
+            <div className="flex flex-col grid-cols-9  mx-auto md:grid">
                 {isEven &&
 
                     <div
@@ -47,7 +47,7 @@ const Timeline = (props: ExperiencesProps) => {
                             initial={{opacity: 0, y:50}}
                             animate={{opacity: 1, y:0}}
                         >
-                            <div className="flex items-center justify-center w-6 h-[125%]">
+                            <div className="flex items-center justify-center w-6 h-full">
                                 <div
                                     className="w-1 h-full bg-gray-300 dark:bg-[#54626F]">
                                 </div>

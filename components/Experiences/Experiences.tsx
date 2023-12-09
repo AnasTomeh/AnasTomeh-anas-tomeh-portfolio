@@ -10,10 +10,10 @@ const Experiences = () => {
             id="experience"
             role="region"
             aria-labelledby="experience-heading"
-            className="max-w-[60rem]  items-center text-center scroll-mt-28 mb-28 sm:mb-30">
+            className="max-w-[60rem]  items-center text-center scroll-mt-28 mb-16 sm:mb-30">
             <SectionHeading>My Experiences</SectionHeading>
            <div className="mt-[80px] flex flex-col items-center">
-               {experiencesData.map((experience, index) => (
+               {experiencesData.map((experience) => (
                    <React.Fragment  key={experience.id}>
                        <Timeline {...experience}/>
                    </React.Fragment>
