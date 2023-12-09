@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.contactIcon {
+    @apply bg-white text-2xl p-2 flex items-center gap-2 rounded-full hover:scale-[1.15]  transition cursor-pointer dark:bg-gray-400
+}
+
+.projectIcon {
+    @apply bg-gray-800 text-white  p-2 flex items-center rounded-full px-5 hover:scale-[1.15]  transition cursor-pointer dark:bg-gray-400 dark:text-gray-900
+}
+
+
+@screen sm {
+    .projectImage {
+        @apply  absolute order-2 top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+        group-hover:scale-[1.04]
+        group-hover:-translate-x-3
+        group-hover:translate-y-3
+        group-hover:-rotate-2
+        group-even:group-hover:translate-x-3
+        group-even:group-hover:translate-y-3
+        group-even:group-hover:rotate-2
+        group-even:right-[initial]
+        group-even:-left-40
+    }
+
+}
+
