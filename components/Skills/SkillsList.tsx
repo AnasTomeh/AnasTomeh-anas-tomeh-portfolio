@@ -54,4 +54,5 @@ const SkillsList = React.memo((props: SkillsListProps) => {
     )
 })
 
+SkillsList.displayName = 'SkillsList';
 export default SkillsList;
