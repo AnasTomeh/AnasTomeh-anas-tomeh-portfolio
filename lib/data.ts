@@ -1,12 +1,11 @@
 import React from "react";
 import {FaLaptopCode, FaReact} from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import EngineerIcon from '@/lib/icons/civil-icon.svg';
 import coralImg from "@/public/projectsImages/coral-project.png";
-import rmtdevImg from "@/public/projectsImages/rmtdev.png";
-import wordanalyticsImg from "@/public/projectsImages/wordanalytics.png";
+import azaryImage from "@/public/projectsImages/azary-appi.png";
+
 import {GrUserWorker} from "react-icons/gr";
-import {TbCode, TbCodeCircle2} from "react-icons/tb";
+import {TbCode} from "react-icons/tb";
 
 export const links = [
     {
@@ -33,23 +32,24 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+
     {
         id: 0,
-        title: "Graduation",
+        title: "Front End Engineer",
         location: "Palestine",
         description:
-            "I graduated with a bachelor degree in civil engineering",
-        icon: React.createElement(LuGraduationCap),
-        date: "December, 2013",
+            "During my intensive training at TAP, I acquired valuable skills in JavaScript programming, the ReactJS framework, and essential frontend technologies, including HTML5 and CSS3. This hands-on learning experience emphasized the seamless integration of web pages and highlighted the importance of implementing SEO best practices. Gaining proficiency in crafting responsive and visually appealing user interfaces, I ensured optimal user experiences. Moreover, I developed skills in optimizing web content for search engines, enhancing my ability to create websites that adhere to modern standards for performance and accessibility.",
+        icon: React.createElement(TbCode),
+        date: "September, 2023 - December, 2023",
     },
     {
         id: 1,
-        title: "Civil Engineer",
-        location: "Saudi Arabia",
+        title: "Full Stack Developer",
+        location: "Palestine",
         description:
-            "I worked as a civil engineer in several infrastructure projects including roads, bridges, and water projects, during that i gained a strong project management skills.",
-        icon:  React.createElement(GrUserWorker),
-        date: "2014 - 2022",
+            "I did an internship at AZZARY company as a full-stack developer. during that I actively contributed to the development and maintenance of both back-end systems using Laravel and front-end interfaces using React.js with TypeScript for web applications, along with React Native for mobile platforms. One of my notable achievements was designing and implementing Learning Management Systems (LMS) from the ground up, encompassing comprehensive back-end and front-end development. ",
+        icon: React.createElement(FaReact),
+        date: "January, 2023 - July, 2023",
     },
     {
         id: 2,
@@ -60,24 +60,23 @@ export const experiencesData = [
         icon: React.createElement(FaLaptopCode),
         date: "2021 - 2022",
     },
-
     {
         id: 3,
-        title: "Full Stack Developer",
-        location: "Palestine",
+        title: "Civil Engineer",
+        location: "Saudi Arabia",
         description:
-            "I did an internship at AZZARY company as a full-stack developer. during that I actively contributed to the development and maintenance of both back-end systems using Laravel and front-end interfaces using React.js with TypeScript for web applications, along with React Native for mobile platforms. One of my notable achievements was designing and implementing Learning Management Systems (LMS) from the ground up, encompassing comprehensive back-end and front-end development. ",
-        icon: React.createElement(FaReact),
-        date: "March, 2023 - July, 2023",
+            "I worked as a civil engineer in several infrastructure projects including roads, bridges, and water projects, during that i gained a strong project management skills.",
+        icon:  React.createElement(GrUserWorker),
+        date: "2014 - 2022",
     },
     {
         id: 4,
-        title: "Front End Engineer",
+        title: "Graduation",
         location: "Palestine",
         description:
-            "During my intensive training at TAP, I acquired valuable skills in JavaScript programming, the ReactJS framework, and essential frontend technologies, including HTML5 and CSS3. This hands-on learning experience emphasized the seamless integration of web pages and highlighted the importance of implementing SEO best practices. Gaining proficiency in crafting responsive and visually appealing user interfaces, I ensured optimal user experiences. Moreover, I developed skills in optimizing web content for search engines, enhancing my ability to create websites that adhere to modern standards for performance and accessibility.",
-        icon: React.createElement(TbCode),
-        date: "September, 2023 - December, 2023",
+            "I graduated with a bachelor degree in civil engineering",
+        icon: React.createElement(LuGraduationCap),
+        date: "December, 2013",
     },
 ] as const;
 
@@ -85,24 +84,18 @@ export const projectsData = [
     {
         title: "COR’AL App",
         description:
-            "This project is accomplished as a graduation requirements for TAP which is an e-commerce web application for a general store that sells a multitude of things, like women’s wear, men’s wear, accessories, makeup, bags, etc.",
+            "This e-commerce app have a responsive and user-friendly interface, facilitating seamless product purchases. Users can effortlessly browse and filter products, place orders, and manage their accounts through features such as user authentication.",
         tags: ["React", "React MUI", "React Query", "MySql", "Node.js"],
         imageUrl: coralImg,
     },
     {
-        title: "rmtDev",
+        title: "Azary App",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
+            "This is an e-commerce app that allows users to open their stores on it. I worked there as a full-stack developer with a front-end focus, during that I developed and maintained both the back-end using Laravel and the front-end using React for the web and React Native for mobile.",
+        tags: ["React", 'React Native', 'Next.js', 'MUI', 'Tailwind', 'Laravel', 'MySql'],
+        imageUrl: azaryImage,
     },
-    {
-        title: "Word Analytics",
-        description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
-    },
+
 ] as const;
 
 export const skillsData = [

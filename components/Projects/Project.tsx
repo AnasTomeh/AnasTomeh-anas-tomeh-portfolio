@@ -45,6 +45,27 @@ const Project = (props: ProjectProps) => {
                             </li>
                         ))}
                     </ul>
+                    <div className="relative  flex gap-4 sm:mt-3 justify-center  mb-6">
+                        <a className="projectIcon"
+                           title="Live Demo"
+                           href={""}
+                           rel="noopener noreferrer"
+                           target="_blank"
+                           aria-label="Live Demo"
+                        >
+                            <FaPlay/>
+                        </a>
+                        <a className="projectIcon"
+                           title="View GitHub Repository"
+                           rel="noopener noreferrer"
+                           href={""}
+                           target="_blank"
+                           aria-label="View GitHub Repository"
+                        >
+                            <FaGithub/>
+                        </a>
+
+                    </div>
                 </div>
 
                 <Image
@@ -54,27 +75,7 @@ const Project = (props: ProjectProps) => {
                     className="projectImage transition"
                     aria-describedby="projectDescription"
                 />
-                <div className="relative sm:left-[72%] sm:-top-8 sm:group-even:left-[5%] flex gap-4 sm:mt-3 sm:justify-start justify-center -mt-12">
-                    <a className="projectIcon"
-                       title="Live Demo"
-                       href={""}
-                       rel="noopener noreferrer"
-                       target="_blank"
-                       aria-label="Live Demo"
-                    >
-                        <FaPlay/>
-                    </a>
-                    <a className="projectIcon"
-                       title="View GitHub Repository"
-                       rel="noopener noreferrer"
-                       href={""}
-                       target="_blank"
-                       aria-label="View GitHub Repository"
-                    >
-                        <FaGithub/>
-                    </a>
 
-                </div>
             </section>
 
         </motion.div>
