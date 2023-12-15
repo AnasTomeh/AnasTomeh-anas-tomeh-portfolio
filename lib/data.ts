@@ -28,6 +28,10 @@ export const links = [
         name: "Experience",
         hash: "#experience",
     },
+    {
+        name: "Contact",
+        hash: "#contact",
+    },
 
 ] as const;
 
@@ -87,6 +91,10 @@ export const projectsData = [
             "This e-commerce app have a responsive and user-friendly interface, facilitating seamless product purchases. Users can effortlessly browse and filter products, place orders, and manage their accounts through features such as user authentication.",
         tags: ["React", "React MUI", "React Query", "MySql", "Node.js"],
         imageUrl: coralImg,
+        links: {
+            liveDemo: 'https://coral-e-commerce-app.vercel.app/',
+            gitHub: 'https://github.com/AnasTomeh/coral-e-commerce-app.git'
+        }
     },
     {
         title: "Azary App",
@@ -94,6 +102,7 @@ export const projectsData = [
             "This is an e-commerce app that allows users to open their stores on it. I worked there as a full-stack developer with a front-end focus, during that I developed and maintained both the back-end using Laravel and the front-end using React for the web and React Native for mobile.",
         tags: ["React", 'React Native', 'Next.js', 'MUI', 'Tailwind', 'Laravel', 'MySql'],
         imageUrl: azaryImage,
+        links: undefined
     },
 
 ] as const;

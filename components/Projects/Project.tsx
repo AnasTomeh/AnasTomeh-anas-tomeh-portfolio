@@ -10,7 +10,7 @@ import {FaGithub, FaPlay} from "react-icons/fa";
 type ProjectProps = typeof projectsData[number]
 
 const Project = (props: ProjectProps) => {
-    const { title, description, tags, imageUrl } = props;
+    const { title, description, tags, imageUrl, links } = props;
     const ref = useRef<HTMLDivElement>(null);
 
     const { isVisible } = useScroll(ref);
@@ -45,27 +45,29 @@ const Project = (props: ProjectProps) => {
                             </li>
                         ))}
                     </ul>
-                    <div className="relative  flex gap-4 sm:mt-3 justify-center  mb-6">
-                        <a className="projectIcon"
-                           title="Live Demo"
-                           href={""}
-                           rel="noopener noreferrer"
-                           target="_blank"
-                           aria-label="Live Demo"
-                        >
-                            <FaPlay/>
-                        </a>
-                        <a className="projectIcon"
-                           title="View GitHub Repository"
-                           rel="noopener noreferrer"
-                           href={""}
-                           target="_blank"
-                           aria-label="View GitHub Repository"
-                        >
-                            <FaGithub/>
-                        </a>
+                    {links &&
+                        <div className="relative  flex gap-4 sm:mt-3 justify-center  mb-6">
+                            <a className="projectIcon"
+                               title="Live Demo"
+                               href={links.liveDemo}
+                               rel="noopener noreferrer"
+                               target="_blank"
+                               aria-label="Live Demo"
+                            >
+                                <FaPlay/>
+                            </a>
+                            <a className="projectIcon"
+                               title="View GitHub Repository"
+                               rel="noopener noreferrer"
+                               href={links.gitHub}
+                               target="_blank"
+                               aria-label="View GitHub Repository"
+                            >
+                                <FaGithub/>
+                            </a>
 
-                    </div>
+                        </div>
+                    }
                 </div>
 
                 <Image

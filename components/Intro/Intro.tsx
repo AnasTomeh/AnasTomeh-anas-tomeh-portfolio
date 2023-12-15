@@ -70,10 +70,10 @@ const Intro = () => {
                    Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition"/>
                 </Link>
                 <a
-                    role="button"
+                    role="link"
                     aria-label="Download CV"
-                    href={'/Anas-Tomeh-CV.pdf'}
-                    download
+                    href={'https://drive.google.com/file/d/1NDtgG6-sDMbQM3bYfT7Pvb14SfKHPi_1/view?usp=drive_link'}
+                    target="_blank"
                     className="group bg-white p-4 text-gray-700  py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-gray-200"
 
                 >
