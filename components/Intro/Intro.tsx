@@ -5,8 +5,8 @@ import myImage from '@/public/anas-image.jpg'
 import { motion } from 'framer-motion';
 import Link from "next/link";
 import {BsArrowRight, BsLinkedin} from "react-icons/bs";
-import {HiDownload} from "react-icons/hi";
 import {FaGithubSquare} from "react-icons/fa";
+import {LuExternalLink} from "react-icons/lu";
 
 
 const Intro = () => {
@@ -74,10 +74,10 @@ const Intro = () => {
                     aria-label="Download CV"
                     href={'https://drive.google.com/file/d/1NDtgG6-sDMbQM3bYfT7Pvb14SfKHPi_1/view?usp=drive_link'}
                     target="_blank"
-                    className="group bg-white p-4 text-gray-700  py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-gray-200"
+                    className="group bg-white p-8 text-gray-700  py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-gray-200"
 
                 >
-                    Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/>
+                    My CV <LuExternalLink className="opacity-60 group-hover:-translate-y-1 transition"/>
                 </a>
 
                 <div className='flex gap-3'>
