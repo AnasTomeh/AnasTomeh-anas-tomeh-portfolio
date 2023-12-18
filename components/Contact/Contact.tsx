@@ -4,6 +4,7 @@ import { BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import SectionHeading from "@/components/SectionHeading";
 import { motion } from "framer-motion";
+import {trackEvent} from '@/utils/analyticsUtils'
 
 const Contact = () => {
     return (
@@ -36,6 +37,13 @@ const Contact = () => {
                        rel="noopener noreferrer"
                        aria-label="Email Anas Tomeh"
                        title="Email"
+                       onClick={() =>
+                           trackEvent({
+                               action: 'Email_Button_Click',
+                               category: 'Contact ME',
+                               label: 'email',
+                           })
+                       }
                    >
                        <MdOutlineEmail size={30}/>
 
@@ -52,6 +60,13 @@ const Contact = () => {
                        rel="noopener noreferrer"
                        aria-label="WhatsApp Anas Tomeh"
                        title="Whatsapp"
+                       onClick={() =>
+                           trackEvent({
+                               action: 'Whatsapp_Button_Click',
+                               category: 'Contact ME',
+                               label: 'whatsapp',
+                           })
+                       }
                    >
                        <BsWhatsapp size={30}/>
                    </a>
@@ -67,6 +82,13 @@ const Contact = () => {
                        rel="noopener noreferrer"
                        aria-label="LinkedIn Profile of Anas Tomeh"
                        title="LinkedIn"
+                       onClick={() =>
+                           trackEvent({
+                               action: 'LinkedIn_Button_Click',
+                               category: 'Contact ME',
+                               label: 'LinkedIn',
+                           })
+                       }
                    >
                        <BsLinkedin size={30}/>
                    </a>

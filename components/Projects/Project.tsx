@@ -6,6 +6,7 @@ import {useRef} from "react";
 import {motion} from "framer-motion";
 import useScroll from "@/hooks/useScroll";
 import {FaGithub, FaPlay} from "react-icons/fa";
+import {trackEvent} from '@/utils/analyticsUtils'
 
 type ProjectProps = typeof projectsData[number]
 
@@ -53,6 +54,13 @@ const Project = (props: ProjectProps) => {
                                rel="noopener noreferrer"
                                target="_blank"
                                aria-label="Live Demo"
+                               onClick={() =>
+                                   trackEvent({
+                                       action: `${title}_Live_Demo_Button_Click`,
+                                       category: 'Project Buttons',
+                                       label: `${title}_live_demo`,
+                                   })
+                               }
                             >
                                 <FaPlay/>
                             </a>
@@ -62,6 +70,13 @@ const Project = (props: ProjectProps) => {
                                href={links.gitHub}
                                target="_blank"
                                aria-label="View GitHub Repository"
+                               onClick={() =>
+                                   trackEvent({
+                                       action: `${title}_GitHub_Repo_Button_Click`,
+                                       category: 'Project Buttons',
+                                       label: `${title}_github`,
+                                   })
+                               }
                             >
                                 <FaGithub/>
                             </a>

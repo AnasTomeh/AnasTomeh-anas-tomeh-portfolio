@@ -7,6 +7,8 @@ import Link from "next/link";
 import {BsArrowRight, BsLinkedin} from "react-icons/bs";
 import {FaGithubSquare} from "react-icons/fa";
 import {LuExternalLink} from "react-icons/lu";
+import {trackEvent} from '@/utils/analyticsUtils'
+import React from "react";
 
 
 const Intro = () => {
@@ -66,6 +68,13 @@ const Intro = () => {
                     role="button"
                     aria-label="Contact Me"
                 className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                    onClick={() =>
+                        trackEvent({
+                            action: 'Contact_ME_Button_Click',
+                            category: 'Contact ME',
+                            label: 'Contact_me',
+                        })
+                    }
                 >
                    Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition"/>
                 </Link>
@@ -75,7 +84,13 @@ const Intro = () => {
                     href={'https://drive.google.com/file/d/1NDtgG6-sDMbQM3bYfT7Pvb14SfKHPi_1/view?usp=drive_link'}
                     target="_blank"
                     className="group bg-white p-8 text-gray-700  py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-gray-200"
-
+                    onClick={() =>
+                        trackEvent({
+                            action: 'CV_Button_Click',
+                            category: 'cv',
+                            label: 'CV',
+                        })
+                    }
                 >
                     My CV <LuExternalLink className="opacity-60 group-hover:-translate-y-1 transition"/>
                 </a>
@@ -87,6 +102,13 @@ const Intro = () => {
                        target="_blank"
                        role="link"
                        aria-label="LinkedIn Profile"
+                       onClick={() =>
+                           trackEvent({
+                               action: 'Linkedin_profile_icon_click',
+                               category: 'social_media',
+                               label: 'LinkedIn Profile',
+                           })
+                       }
                     >
                         <BsLinkedin/>
                     </a>
@@ -97,6 +119,13 @@ const Intro = () => {
                        rel="noopener noreferrer"
                        role="link"
                        aria-label="GitHub Profile"
+                       onClick={() =>
+                           trackEvent({
+                               action: 'GitHub_profile_icon_click',
+                               category: 'social_media',
+                               label: 'GitHub Profile',
+                           })
+                       }
                     >
                         <FaGithubSquare/>
                     </a>

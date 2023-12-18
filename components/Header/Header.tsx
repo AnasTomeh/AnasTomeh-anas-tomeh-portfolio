@@ -2,14 +2,24 @@
 import { motion } from 'framer-motion';
 import { links } from "@/lib/data";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import useSectionInView from "@/hooks/useSectionInView";
 import ThemeSwitch from "@/components/ThemeSwitch/ThemeSwitch";
+import {trackEvent} from "@/utils/analyticsUtils";
 
 type Link = typeof links[number];
 
 const Header: React.FC = () => {
     const activeSection = useSectionInView(links);
+
+    const handleLinkClick = (link: Link) => {
+
+        trackEvent({
+            action: 'header_link_click',
+            category: 'Navigation',
+            label: link.name,
+        });
+    };
 
     return (
         <header className="z-[999] relative">
@@ -37,6 +47,7 @@ const Header: React.FC = () => {
                                     className={`flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300 ${
                                         activeSection === link.name ? 'text-gray-950 dark:text-gray-200' : ''
                                     }`}
+                                    onClick={() => handleLinkClick(link)}
                                 >
                                     {link.name}
                                 </Link>
