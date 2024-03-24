@@ -81,7 +81,7 @@ const Intro = () => {
                 <a
                     role="link"
                     aria-label="Download CV"
-                    href={'https://drive.google.com/file/d/1em2JSGXCusr_RO_qIsGvc8UB38s4Nbg3/view?usp=sharing'}
+                    href={'https://drive.google.com/file/d/1S_-ZfY0D3uF6eWs0pz3ch7BJlJyBCnuy/view?usp=sharing'}
                     target="_blank"
                     className="group bg-white p-8 text-gray-700  py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-gray-200"
                     onClick={() =>
