@@ -7,7 +7,7 @@ import useScroll from "@/hooks/useScroll";
 
 type ExperiencesProps = typeof experiencesData[number]
 const Timeline = (props: ExperiencesProps) => {
-    const { id, title, location, description, icon , date} = props;
+    const { id, title, location, description, icon , date, company, link} = props;
 
     const ref = useRef<HTMLDivElement>(null);
     const { isVisible } = useScroll(ref);
@@ -38,7 +38,8 @@ const Timeline = (props: ExperiencesProps) => {
                         >
                             <h3 className="text-xl font-semibold">{title}</h3>
                             <h4 className="text-lg font-normal">{location}</h4>
-                            <h4 className="text-sm font-semibold font-normal">{date}</h4>
+                            <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-400">{company}</a>
+                            <h4 className="text-sm font-semibold">{date}</h4>
                             <p className="mt-1 leading-6 font-normal sm:text-sm text-xs">{description}</p>
 
                         </motion.div>
@@ -82,20 +83,22 @@ const Timeline = (props: ExperiencesProps) => {
                         </motion.div>
                         <motion.div
                             ref={ref}
-                          className="relative p-4 my-6
+                            className="relative p-4 my-6
                          col-start-6 col-end-10 mr-auto text-gray-800 text-left
                          bg-[#f3f4f6] border border-solid border-gray-300
                          rounded-2xl dark:bg-gray-700 dark:border-gray-600 dark:text-white/75 flex flex-col gap-2"
                             animate={{
                                 opacity: isVisible ? 1 : 0,
                                 x: isVisible ? 0 : 20,
-                                transition: { duration: 0.5, ease: "easeInOut" },
+                                transition: {duration: 0.5, ease: "easeInOut"},
                             }}
-                            initial={{ opacity: 0, x: 40 }}
+                            initial={{opacity: 0, x: 40}}
                         >
                             <h3 className="text-lg font-semibold lg:text-xl">{title}</h3>
                             <h4 className="text-lg font-normal ">{location}</h4>
-                            <h4 className="text-sm font-semibold font-normal">{date}</h4>
+                            <a href={link} target="_blank" rel="noopener noreferrer"
+                               className="text-blue-400">{company}</a>
+                            <h4 className="text-sm font-semibold">{date}</h4>
                             <p className="mt-2 leading-6 ">{description}</p>
 
                         </motion.div>

@@ -5,7 +5,7 @@ import coralImg from "@/public/projectsImages/coral-project.png";
 import azaryImage from "@/public/projectsImages/azary-appi.png";
 
 import {GrUserWorker} from "react-icons/gr";
-import {TbCode} from "react-icons/tb";
+import {TbCode, TbDeviceLaptop} from "react-icons/tb";
 
 export const links = [
     {
@@ -40,47 +40,69 @@ export const experiencesData = [
     {
         id: 0,
         title: "Front End Engineer",
+        location: "Remotely",
+        description:
+            "As a pivotal member of the team palm.hr, I was responsible of creating the new version of the company website from scratch using Gatsby.js. I ensured that the design was responsive, typicla to Figma design, and adhered to best practices and clean code.\n" +
+            "Additionally, I spearheaded the development of new features for the dashboard, enhancing user experience and functionality, while meticulously diagnosing and resolving bugs to maintain a seamless, error-free interface. My efforts elevated platform performance and aesthetics by refining front-end architecture and design elements. Moreover, I led the integration of RESTful APIs, ensuring smooth data exchange and feature interoperability, while expanding the project's component library by crafting reusable React components, thereby streamlining development processes.",
+        icon: React.createElement(TbDeviceLaptop),
+        date: "June, 2024 - up to now",
+        company: "palm.hr",
+        link: "https://palmhr.net/en/"
+    },
+    {
+        id: 1,
+        title: "Front End Engineer",
         location: "Palestine",
         description:
             "During my intensive training at TAP, I acquired valuable skills in JavaScript programming, the ReactJS framework, and essential frontend technologies, including HTML5 and CSS3. This hands-on learning experience emphasized the seamless integration of web pages and highlighted the importance of implementing SEO best practices. Gaining proficiency in crafting responsive and visually appealing user interfaces, I ensured optimal user experiences. Moreover, I developed skills in optimizing web content for search engines, enhancing my ability to create websites that adhere to modern standards for performance and accessibility.",
         icon: React.createElement(TbCode),
         date: "September, 2023 - December, 2023",
+        company: "TAP",
+        link: "https://www.tapcareers.io/"
     },
     {
-        id: 1,
+        id: 2,
         title: "Full Stack Developer",
         location: "Palestine",
         description:
             "I did an internship at AZZARY company as a full-stack developer. during that I actively contributed to the development and maintenance of both back-end systems using Laravel and front-end interfaces using React.js with TypeScript for web applications, along with React Native for mobile platforms. One of my notable achievements was designing and implementing Learning Management Systems (LMS) from the ground up, encompassing comprehensive back-end and front-end development. ",
         icon: React.createElement(FaReact),
-        date: "January, 2023 - July, 2023",
-    },
-    {
-        id: 2,
-        title: "Learning Full Stack Development",
-        location: "Online",
-        description:
-            "I started self learning of full stack development using open sources. During that I have learned HTML, CSS, JavaScript, Bootstrap, Node.js, MongoDB, and React.js.",
-        icon: React.createElement(FaLaptopCode),
-        date: "2021 - 2022",
+        date: "November, 2022 - July, 2023",
+        company: "AZZARY",
+        link: "https://www.azary.ps/"
     },
     {
         id: 3,
+        title: "Learning Full Stack Development",
+        location: "Online",
+        description:
+            "I embarked on a journey of self-learning in full-stack development using open sources. This involved intensive courses supplemented by weekly mentorship sessions. Throughout this period, I gained proficiency in HTML, CSS, JavaScript, Bootstrap, Node.js, MongoDB, and React.js. I actively applied my knowledge by completing several full-scale projects. Notably, I utilized platforms like SATR, where I earned multiple accolades and consistently ranked highly in competitions.",
+        icon: React.createElement(FaLaptopCode),
+        date: "2021 - 2022",
+        company: "SATR",
+        link: "https://profile.satr.codes/anas_tomeh/public/overview"
+    },
+    {
+        id: 4,
         title: "Civil Engineer",
         location: "Saudi Arabia",
         description:
             "I worked as a civil engineer in several infrastructure projects including roads, bridges, and water projects, during that i gained a strong project management skills.",
         icon:  React.createElement(GrUserWorker),
         date: "2014 - 2022",
+        company: "",
+        link: ""
     },
     {
-        id: 4,
+        id: 5,
         title: "Graduation",
         location: "Palestine",
         description:
             "I graduated with a bachelor degree in civil engineering",
         icon: React.createElement(LuGraduationCap),
         date: "December, 2013",
+        company: "",
+        link: ""
     },
 ] as const;
 
@@ -118,6 +140,7 @@ export const skillsData = [
     "React Query",
     "Redux",
     "Next.js",
+    "Gatsby js",
     "Bootstrap",
     "Tailwind",
     "UI/UX",
