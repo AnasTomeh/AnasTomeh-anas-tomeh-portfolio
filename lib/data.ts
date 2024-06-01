@@ -42,10 +42,10 @@ export const experiencesData = [
         title: "Front End Engineer",
         location: "Remotely",
         description:
-            "As a pivotal member of the team palm.hr, I was responsible of creating the new version of the company website from scratch using Gatsby.js. I ensured that the design was responsive, typicla to Figma design, and adhered to best practices and clean code.\n" +
-            "Additionally, I spearheaded the development of new features for the dashboard, enhancing user experience and functionality, while meticulously diagnosing and resolving bugs to maintain a seamless, error-free interface. My efforts elevated platform performance and aesthetics by refining front-end architecture and design elements. Moreover, I led the integration of RESTful APIs, ensuring smooth data exchange and feature interoperability, while expanding the project's component library by crafting reusable React components, thereby streamlining development processes.",
+            "As a Front End Engineer at palm.hr, I leveraged my expertise in React.js, Tailwind CSS, Gatsby.js, Bootstrap, and others to contribute to diverse projects, ensuring adherence to best practices and delivering pixel-perfect interfaces with seamless API integrations.  My tasks ranged from creating new features to fixing bugs to updating the company components library.\n" +
+            "One of my notable achievements is creating a new version of the company website from scratch using Gatsby JS and Tailwind CSS within three weeks, resulting in a pixel-perfect, responsive website supporting multi-country content and languages.",
         icon: React.createElement(TbDeviceLaptop),
-        date: "June, 2024 - up to now",
+        date: "March, 2024 - up to now",
         company: "palm.hr",
         link: "https://palmhr.net/en/"
     },
@@ -65,10 +65,10 @@ export const experiencesData = [
         title: "Full Stack Developer",
         location: "Palestine",
         description:
-            "I did an internship at AZZARY company as a full-stack developer. during that I actively contributed to the development and maintenance of both back-end systems using Laravel and front-end interfaces using React.js with TypeScript for web applications, along with React Native for mobile platforms. One of my notable achievements was designing and implementing Learning Management Systems (LMS) from the ground up, encompassing comprehensive back-end and front-end development. ",
+            "I did an internship at Azary company as a full-stack developer. during that I actively contributed to the development and maintenance of both back-end systems using Laravel and front-end interfaces using React.js with TypeScript for web applications, along with React Native for mobile platforms. One of my notable achievements was designing and implementing Learning Management Systems (LMS) from the ground up, encompassing comprehensive back-end and front-end development. ",
         icon: React.createElement(FaReact),
         date: "November, 2022 - July, 2023",
-        company: "AZZARY",
+        company: "Azary",
         link: "https://www.azary.ps/"
     },
     {
@@ -158,7 +158,6 @@ export const skillsData = [
 export const transferableSkillsData = [
     "Project Management",
     "Time Management",
-    "Risk Management",
     "Communication",
     "Report Writing",
     "Adaptability",

@@ -99,7 +99,7 @@ const Timeline = (props: ExperiencesProps) => {
                             <a href={link} target="_blank" rel="noopener noreferrer"
                                className="text-blue-400">{company}</a>
                             <h4 className="text-sm font-semibold">{date}</h4>
-                            <p className="mt-2 leading-6 ">{description}</p>
+                            <p className="mt-2 leading-6 font-normal sm:text-sm text-xs">{description}</p>
 
                         </motion.div>
                     </div>
