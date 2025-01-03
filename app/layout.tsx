@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Anas Tomeh Portfolio',
-  description: 'Anas Tomeh is a front-end engineer specializing in building responsive and well-structured web applications. Proficient in HTML, CSS, JavaScript, and React, Anas is also familiar with TypeScript, React Native, Next.js, Bootstrap, Tailwind, and React MUI. With a keen understanding of SEO best practices',
+  description: 'Anas Tomeh is a Full Stack Developer with Front-End Focus specializing in building responsive and well-structured web applications. Proficient in HTML, CSS, JavaScript, and React, Anas is also familiar with TypeScript, React Native, Next.js, Bootstrap, Tailwind, and React MUI. With a keen understanding of SEO best practices',
 }
 
 export default function RootLayout({
