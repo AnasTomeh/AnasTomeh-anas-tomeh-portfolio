@@ -47,7 +47,7 @@ const Intro = () => {
             >
 
                 <span className="font-bold">Hello, I'm Anas.</span> I'm a skilled, quick learner{" "}
-                <span className="font-bold">Front-End Engineer.</span><br/>
+                <span className="font-bold">Full Stack Developer with Front-End Focus.</span><br/>
                 Dedicated to{" "}
                 <span className="underline">changing great ideas into innovative digital solutions {" "}</span>
                 using several front-end tools mainly {" "}

@@ -64,8 +64,7 @@ export const experiencesData = [
         id: 2,
         title: "Full Stack Developer",
         location: "Palestine",
-        description:
-            "I did an internship at Azary company as a full-stack developer. during that I actively contributed to the development and maintenance of both back-end systems using Laravel and front-end interfaces using React.js with TypeScript for web applications, along with React Native for mobile platforms. One of my notable achievements was designing and implementing Learning Management Systems (LMS) from the ground up, encompassing comprehensive back-end and front-end development. ",
+        description: "I worked at Azary company as a full-stack developer, where I actively contributed to the development and maintenance of both back-end systems using Laravel and front-end interfaces using React.js with TypeScript for web applications, along with React Native for mobile platforms. One of my notable achievements was designing and implementing Learning Management Systems (LMS) from the ground up, encompassing comprehensive back-end and front-end development.",
         icon: React.createElement(FaReact),
         date: "November, 2022 - July, 2023",
         company: "Azary",
