@@ -36,9 +36,20 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
-
     {
         id: 0,
+        title: "QA Automation Engineer (E2E Testing)",
+        location: "Remotely",
+        description:
+          "Working within the front-end team while specializing in End-to-End UI test automation. I design and maintain a scalable automation tests using Playwright and TypeScript to validate complex user workflows across the all platforms.\n\n" +
+          "My work focuses on building reliable E2E tests, implementing reusable fixtures and utilities, and creating role-based testing scenarios covering multiple user types. I also leverage AI-assisted development workflows to accelerate test creation, debugging, and automation coverage while improving overall testing efficiency and product quality.",
+        icon: React.createElement(TbDeviceLaptop),
+        date: "December, 2025 - Present",
+        company: "IOHealth",
+        link: "https://iohealth.com/"
+    },
+    {
+        id: 1,
         title: "Front End Engineer",
         location: "Remotely",
         description:
@@ -50,7 +61,7 @@ export const experiencesData = [
         link: "https://palmhr.net/en/"
     },
     {
-        id: 1,
+        id: 2,
         title: "Front End Engineer",
         location: "Palestine",
         description:
@@ -61,7 +72,7 @@ export const experiencesData = [
         link: "https://www.tapcareers.io/"
     },
     {
-        id: 2,
+        id: 3,
         title: "Full Stack Developer",
         location: "Palestine",
         description: "I worked at Azary company as a full-stack developer, where I actively contributed to the development and maintenance of both back-end systems using Laravel and front-end interfaces using React.js with TypeScript for web applications, along with React Native for mobile platforms. One of my notable achievements was designing and implementing Learning Management Systems (LMS) from the ground up, encompassing comprehensive back-end and front-end development.",
@@ -71,7 +82,7 @@ export const experiencesData = [
         link: "https://www.azary.ps/"
     },
     {
-        id: 3,
+        id: 4,
         title: "Learning Full Stack Development",
         location: "Online",
         description:
@@ -82,7 +93,7 @@ export const experiencesData = [
         link: "https://profile.satr.codes/anas_tomeh/public/overview"
     },
     {
-        id: 4,
+        id: 5,
         title: "Civil Engineer",
         location: "Saudi Arabia",
         description:
@@ -93,7 +104,7 @@ export const experiencesData = [
         link: ""
     },
     {
-        id: 5,
+        id: 6,
         title: "Graduation",
         location: "Palestine",
         description:
@@ -151,6 +162,9 @@ export const skillsData = [
     "GitHub",
     "Responsive Web Design",
     "SEO Best Practice",
+  "Playwright",
+  "End-to-End Testing (E2E)",
+  "UI Test Automation",
 
 ] as const;
 
